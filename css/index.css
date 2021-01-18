@@ -1,0 +1,86 @@
+html,
+body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+    background: #000;
+}
+
+#wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.guang {
+    position: absolute;
+    top: .333333rem;
+    width: 100%;
+    z-index: 1;
+    animation: rotate 3s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hongbao {
+    position: absolute;
+    top: 3.986667rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 7.893333rem;
+    height: 10.373333rem;
+    z-index: 2;
+    pointer-events:none;
+}
+
+.monny {
+    position: absolute;
+    top: 7.3rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 4.426667rem;
+    height: 1.52rem;
+}
+
+.btnImg {
+    position: absolute;
+    top: 11.28rem;
+    width: 10rem;
+    height: 1.066667rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 4.533333rem;
+    height: 1.066667rem;
+    animation: beat .5s alternate linear infinite;
+    z-index: 3;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
